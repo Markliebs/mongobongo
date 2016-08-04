@@ -1,0 +1,20 @@
+body {
+	background: url("../images/soft_circle_scales/soft_circle_scales.png")
+}
+
+.header {
+	text-align: center;
+}
+
+.imageHeader {
+	margin: 0 37%;
+}
+
+.comments {
+	background-color: e1e1ff !important;
+}
+
+#bubbles {
+	background-color: transparent;
+	width: 25%;
+}

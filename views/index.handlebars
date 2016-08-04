@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="header col-xs-12">
+		<h1>Share your thoughts with Mongo Bongo!</h1>
+	</div>
+	<div class="imageHeader col-xs-12">	
+		<img id="bubbles" src="assets/images/multiple-speech-bubbles.png">
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-5">
+				<button type="submit" id="submit" class="btn btn-lg btn-info">Get news</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				{{#each articles}}
+				<div class="well articles">
+					<h4>Title: {{title}}</h4>
+					<img src="{{image}}"></br>
+					<a href="{{link}}">Link to article</a>
+					<p>{{desc}}</p>
+					<div class="well well-sm comments">
+						{{#comments}}
+						<p>{{user}}: {{comment}}</p>
+						<button type="submit" value="{{created}}" class="glyphicon glyphicon-trash delete"></button>
+						{{/comments}}
+					</div>
+					<form>
+						<input type="text" id="user" placeholder="Guest"/>
+        				<input type="text" id="comment" size="50" placeholder="Comment"/></br>
+						<button type="submit"  value="{{_id}}" id="addComment">Add New Comment</button>
+					</form>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
