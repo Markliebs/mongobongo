@@ -8,7 +8,6 @@ $(document).ready(function () {
 		  })
 			.done(function (data) {
 				console.log(data);
-				console.log("test");
 				//can build out wells here in a for loop or use handlebars helper function
 			});
 		return false;
